@@ -32,7 +32,6 @@ wheels/
 profiles.csv
 
 # Visualizations
-images/*.png
 
 # Misc
 .DS_Store
