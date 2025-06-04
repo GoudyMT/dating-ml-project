@@ -50,12 +50,19 @@ This project builds a machine learning model to predict compatibility between us
     - Precision: 0.8235
     - Recall: 1.0000
     - ROC-AUC: 0.9992
-  - Confusion Matrix:
-    ![Confusion Matrix](images/final_xgb_cm_class_weights.png)
-  - ROC Curve:
-    ![ROC Curve](images/final_xgb_roc_class_weights.png)
-  - Feature Importance:
-    ![Feature Importance](images/final_xgb_feature_importance_class_weights.png)
+
+- Confusion Matrix:
+  
+![Confusion Matrix](images/final_xgb_cm_class_weights.png)
+
+- ROC Curve:
+
+![ROC Curve](images/final_xgb_roc_class_weights.png)
+
+- Sensitivity Analysis:
+
+![Sensitivity Analysis](images/sensitivity_analysis_0.35.png)
+
 - **Key Insights**:
   - Class Weights outperformed SMOTE (F1-score: 0.8889, precision: 0.9231, recall: 0.8571), improving recall (1.0000) while maintaining strong precision (0.8235).
   - TruncatedSVD (200 components, 31.3% variance) underperformed (F1-score: 0.7857), confirming TF-IDF `essay_similarity` is sufficient for text representation.
